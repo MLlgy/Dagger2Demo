@@ -8,6 +8,10 @@ import com.example.administrator.dagger2demo.R;
 
 import javax.inject.Inject;
 
+/**
+ * User 所在的类  -- 目标类
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Inject

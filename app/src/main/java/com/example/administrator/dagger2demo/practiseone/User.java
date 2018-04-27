@@ -2,6 +2,10 @@ package com.example.administrator.dagger2demo.practiseone;
 
 import javax.inject.Inject;
 
+/**
+ * 构造函数被 @Inject 标记的 依赖类
+ */
+
 public class User {
 
     private String mName = "jack chen";
