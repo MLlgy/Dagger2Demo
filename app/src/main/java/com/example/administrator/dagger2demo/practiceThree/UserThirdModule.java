@@ -17,8 +17,8 @@ public class UserThirdModule {
      * E:\Git\PGit\Dagger2Demo\app\src\main\java\com\example\administrator\dagger2demo\practicetwo\UserTwoComponent.java:7: 错误: com.example.administrator.dagger2demo.practicetwo.UserTwo is bound multiple times:
      void injectToThirdActivity(SecondActivity mSecondActivity);
      ^
-     @Provides com.example.administrator.dagger2demo.practicetwo.UserTwo com.example.administrator.dagger2demo.practicetwo.UserTwoModule.provideUserTwo()
-     @Provides com.example.administrator.dagger2demo.practicetwo.UserTwo com.example.administrator.dagger2demo.practicetwo.UserTwoModule.provideUserTwoWithoutParams()
+     @Provides com.example.administrator.dagger2demo.practicetwo.UserTwo com.example.administrator.dagger2demo.practicetwo.UserTwoModule.provideUserThird()
+     @Provides com.example.administrator.dagger2demo.practicetwo.UserTwo com.example.administrator.dagger2demo.practicetwo.UserTwoModule.provideUserThirdWithoutParams()
      1 个错误
      :app:compil
      * @return
@@ -31,13 +31,13 @@ public class UserThirdModule {
      */
     @UserThirdQualifier("c")
     @Provides
-    UserThird provideUserTwo(){
+    UserThird provideUserThird(){
         return new UserThird("男",1243);
     }
 
     @UserThirdQualifier("d")
     @Provides
-    UserThird provideUserTwoWithoutParams() {
+    UserThird provideUserThirdWithoutParams() {
         return new UserThird();
     }
 
