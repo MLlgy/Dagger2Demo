@@ -25,7 +25,9 @@ public class ForthActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forth);
-        mForthComponent = DaggerUserForthComponent.builder().build();
+//        mForthComponent = DaggerUserForthComponent.builder().build();
+
+        mForthComponent = DaggerUserForthComponent.builder().userForthModule(new UserForthModule()).build();
         mForthComponent.injectIntoForthActivity(this);
         Log.e(TAG, "onCreate() returned: " + mUserForthOne.getName() + " 1 " + mUserForthOne.getAge());
         Log.e(TAG, "onCreate() returned: " + mUserForthTwo.getName() + " 2 " + mUserForthTwo.getAge());
