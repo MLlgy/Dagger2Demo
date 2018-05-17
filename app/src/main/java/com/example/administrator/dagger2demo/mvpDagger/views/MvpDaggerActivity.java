@@ -8,9 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.administrator.dagger2demo.R;
+import com.example.administrator.dagger2demo.mvpDagger.Di.DaggerMainComponent;
+import com.example.administrator.dagger2demo.mvpDagger.Di.MinePresentModule;
+import com.example.administrator.dagger2demo.mvpDagger.ThisPartApplication;
 import com.example.administrator.dagger2demo.mvpDagger.contracts.MineContract;
 import com.example.administrator.dagger2demo.mvpDagger.models.User;
 import com.example.administrator.dagger2demo.mvpDagger.presenters.MinePresenter;
+
+import javax.inject.Inject;
 
 public class MvpDaggerActivity extends AppCompatActivity implements MineContract.View {
     private static final String TAG = "MvpDaggerActivity";
@@ -18,13 +23,16 @@ public class MvpDaggerActivity extends AppCompatActivity implements MineContract
     private EditText mPassword;
     private Button mSubmit;
 
-    private MinePresenter minePresenter;
+    @Inject
+     MinePresenter minePresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mvp_dagger);
-        minePresenter = new MinePresenter(this);
+//        minePresenter = new MinePresenter(this);
+        DaggerMainComponent.builder().minePresentModule(new MinePresentModule(this))
+                .appComponent(ThisPartApplication.getInstance().getAppComponent()).build().inject(this);
         initView();
     }
 

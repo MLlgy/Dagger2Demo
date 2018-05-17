@@ -7,6 +7,8 @@ import com.example.administrator.dagger2demo.mvpDagger.models.User;
 
 import java.util.logging.Handler;
 
+import javax.inject.Inject;
+
 /**
  * Creater: liguoying
  * Time: 2018/5/17 0017 16:47
@@ -16,6 +18,7 @@ public class MinePresenter implements MineContract.Presenter {
     private static final String TAG = "MinePresenter";
     private MineContract.View mView;
 
+    @Inject
     public MinePresenter(MineContract.View mView) {
         this.mView = mView;
     }
