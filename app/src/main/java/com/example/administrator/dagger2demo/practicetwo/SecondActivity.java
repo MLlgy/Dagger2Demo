@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        DaggerUserTwoComponent.builder().build().injectToSecondActivity(this);
+        DaggerUserTwoComponent.builder().userTwoModule(new UserTwoModule()).build().injectToSecondActivity(this);
         Log.e(TAG, "onCreate: " + "sex" + mUserTwo.getSex() + " number：" + mUserTwo.getCarNum());
         mUserTwo.setCarNum(46);
         mUserTwo.setSex("女");
