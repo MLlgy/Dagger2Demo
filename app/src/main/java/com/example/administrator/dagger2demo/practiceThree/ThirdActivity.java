@@ -23,7 +23,7 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        DaggerUserThirdComponent.builder().build().injectToThirdActivity(this);
+        DaggerUserThirdComponent.builder().userThirdModule(new UserThirdModule()).build().injectToThirdActivity(this);
         Log.e(TAG, "onCreate: " + "sex" + mUserTwoC.getSex() + " number：" + mUserTwoC.getCarNum());
         mUserTwoC.setCarNum(46);
         mUserTwoC.setSex("女");
