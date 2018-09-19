@@ -9,5 +9,5 @@ import dagger.Subcomponent;
 
 @Subcomponent(modules = ModuleSubComponentB.class)
 public interface SubComponentB {
-
+    void injectActivity(ShowDiffComponentActivity mActivity);
 }

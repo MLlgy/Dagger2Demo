@@ -2,10 +2,9 @@ package com.example.administrator.dagger2demo.mvpDagger;
 
 import android.app.Application;
 
-import com.example.administrator.dagger2demo.mvpDagger.Di.AppComponent;
-import com.example.administrator.dagger2demo.mvpDagger.Di.AppModule;
-import com.example.administrator.dagger2demo.mvpDagger.Di.DaggerAppComponent;
-
+import com.example.administrator.dagger2demo.mvpDagger.di.AppComponent;
+import com.example.administrator.dagger2demo.mvpDagger.di.AppModule;
+import com.example.administrator.dagger2demo.mvpDagger.di.DaggerAppComponent;
 /**
  * Creater: liguoying
  * Time: 2018/5/17 0017 18:08

@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.administrator.dagger2demo.R;
-import com.example.administrator.dagger2demo.mvpDagger.Di.DaggerMainComponent;
-import com.example.administrator.dagger2demo.mvpDagger.Di.MinePresentModule;
+import com.example.administrator.dagger2demo.mvpDagger.di.DaggerMainComponent;
+import com.example.administrator.dagger2demo.mvpDagger.di.MinePresentModule;
 import com.example.administrator.dagger2demo.mvpDagger.ThisPartApplication;
 import com.example.administrator.dagger2demo.mvpDagger.contracts.MineContract;
 import com.example.administrator.dagger2demo.mvpDagger.models.User;

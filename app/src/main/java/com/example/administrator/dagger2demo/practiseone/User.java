@@ -1,6 +1,7 @@
 package com.example.administrator.dagger2demo.practiseone;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * 构造函数被 @Inject 标记的 依赖类

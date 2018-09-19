@@ -1,5 +1,7 @@
 package com.example.administrator.dagger2demo.practiceThree;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -29,13 +31,15 @@ public class UserThirdModule {
      *  practicetwo 产生的问题：  的解决办法： @UserThirdQualifier  限定符
      * @return
      */
-    @UserThirdQualifier("c")
+//    @UserThirdQualifier("c")
+    @Named("a")
     @Provides
     UserThird provideUserThird(){
         return new UserThird("男",1243);
     }
 
-    @UserThirdQualifier("d")
+//    @UserThirdQualifier("d")
+    @Named("b")
     @Provides
     UserThird provideUserThirdWithoutParams() {
         return new UserThird();

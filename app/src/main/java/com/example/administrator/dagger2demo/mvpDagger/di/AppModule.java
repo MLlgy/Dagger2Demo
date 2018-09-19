@@ -1,4 +1,4 @@
-package com.example.administrator.dagger2demo.mvpDagger.Di;
+package com.example.administrator.dagger2demo.mvpDagger.di;
 
 import android.content.Context;
 

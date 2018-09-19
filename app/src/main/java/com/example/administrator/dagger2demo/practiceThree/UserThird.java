@@ -1,16 +1,20 @@
 package com.example.administrator.dagger2demo.practiceThree;
 
+import javax.inject.Named;
+
 public class UserThird {
 
     private String mSex = "man";
     private int mCarNum = 7;
 
-    @UserThirdQualifier("a")
+//    @UserThirdQualifier("a")
 //    @Inject
+//    @Named("a")
     public UserThird() {
     }
-    @UserThirdQualifier("b")
+//    @UserThirdQualifier("b")
 //    @Inject
+//    @Named("b")
     public UserThird(String mSex, int mCarNum) {
         this.mSex = mSex;
         this.mCarNum = mCarNum;

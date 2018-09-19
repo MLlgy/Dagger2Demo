@@ -1,7 +1,6 @@
-package com.example.administrator.dagger2demo.mvpDagger.Di;
+package com.example.administrator.dagger2demo.mvpDagger.di;
 
 import com.example.administrator.dagger2demo.mvpDagger.contracts.MineContract;
-import com.example.administrator.dagger2demo.mvpDagger.presenters.MinePresenter;
 
 import dagger.Module;
 import dagger.Provides;

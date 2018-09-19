@@ -7,13 +7,16 @@ import android.util.Log;
 import com.example.administrator.dagger2demo.R;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public class ThirdActivity extends AppCompatActivity {
-    @UserThirdQualifier("c")
+//    @UserThirdQualifier("c")
+    @Named("a")
     @Inject
     UserThird mUserTwoC;
 
-    @UserThirdQualifier("d")
+//    @UserThirdQualifier("d")
+    @Named("b")
     @Inject
     UserThird mUserTwoD;
 
