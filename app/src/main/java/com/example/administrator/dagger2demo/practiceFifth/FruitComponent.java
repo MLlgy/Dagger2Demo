@@ -1,5 +1,7 @@
 package com.example.administrator.dagger2demo.practiceFifth;
 
+import android.app.Activity;
+
 import dagger.Component;
 
 /**
@@ -10,5 +12,5 @@ import dagger.Component;
 @Component(modules = {FruitModule.class})
 public interface FruitComponent {
 
-    void inject(TestScopeActivity mTestScopeActivity);
+    void inject(FuriteScopeActivity mTestScopeActivity);
 }

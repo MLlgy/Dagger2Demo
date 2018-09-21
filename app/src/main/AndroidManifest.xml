@@ -29,11 +29,13 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".practiceThree.ThirdActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".practiceForth.ForthActivity">
 
@@ -52,13 +54,14 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".aboutcomponent.ShowDiffComponentActivity" />
-        <activity android:name=".practiceFifth.TestScopeActivity">
+        <activity android:name=".practiceFifth.FuriteScopeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".practiceFifth.FlowerScopeActivity"></activity>
     </application>
 
 </manifest>
