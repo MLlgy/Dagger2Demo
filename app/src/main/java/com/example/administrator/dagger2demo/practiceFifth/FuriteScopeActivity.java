@@ -34,6 +34,8 @@ public class FuriteScopeActivity extends AppCompatActivity {
         mFruitComponent = DaggerFruitComponent.builder().fruitModule(new FruitModule()).build();
         mFruitComponent.inject(this);// 完成注入，没有这句话是不行的
 
+        Log.e("TAG", "mFruitComponent1:" + mFruitComponent.toString());
+
         Log.e("TAG", "mAppleBeanA:" + mAppleBeanA.toString());
         Log.e("TAG", "mAppleBeanB:" + mAppleBeanB.toString());
 
@@ -44,12 +46,21 @@ public class FuriteScopeActivity extends AppCompatActivity {
     }
 
     public void jump(View view) {
+        mFruitComponent = DaggerFruitComponent.builder().fruitModule(new FruitModule()).build();
+        mFruitComponent.inject(this);// 完成注入，没有这句话是不行的
 
-        Intent mIntent = new Intent(this, FlowerScopeActivity.class);
-        Bundle mBundle = new Bundle();
-//        mBundle.putSerializable("op",mFruitComponent);
+        Log.e("TAG", "mFruitComponent2:" + mFruitComponent.toString());
+        Log.e("TAG", "mAppleBeanA:" + mAppleBeanA.toString());
+        Log.e("TAG", "mAppleBeanB:" + mAppleBeanB.toString());
 
-        startActivity(mIntent);
+        Log.e("TAG", "mOrgranBeanA:" + mOrgranBeanA.toString());
+        Log.e("TAG", "mOrgranBeanB:" + mOrgranBeanB.toString());
+
+//        Intent mIntent = new Intent(this, FlowerScopeActivity.class);
+//        Bundle mBundle = new Bundle();
+////        mBundle.putSerializable("op",mFruitComponent);
+//
+//        startActivity(mIntent);
     }
 
 //    public static FruitComponent getFruitComponent() {

@@ -1,7 +1,7 @@
 package com.example.administrator.dagger2demo.practiceFifth;
 
-import dagger.Module;
-import dagger.Provides;
+        import dagger.Module;
+        import dagger.Provides;
 
 /**
  * Author：Administrator
@@ -11,13 +11,13 @@ import dagger.Provides;
 @Module
 public class FruitModule {
 
-    @TestScope
+    @AnyOneScope
     @Provides
     AppleBean provideApple() {
         return new AppleBean();
     }
 
-    @TestScope
+    @AnyOneScope
     @Provides
     OrgranBean provideOrgran() {
         return new OrgranBean();

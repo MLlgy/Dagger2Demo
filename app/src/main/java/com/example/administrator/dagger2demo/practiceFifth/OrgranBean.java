@@ -13,7 +13,6 @@ public class OrgranBean {
     private String color;
     private int weight;
 
-    @Inject
     public OrgranBean() {
         Log.e("TAG", "OrgranBean");
     }

@@ -4,6 +4,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Scope;
+import javax.inject.Singleton;
 
 /**
  * Author：Administrator
@@ -11,6 +12,7 @@ import javax.inject.Scope;
  */
 
 @Scope
+@Singleton
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TestScope {
+public @interface AnyOneScope {
 }
